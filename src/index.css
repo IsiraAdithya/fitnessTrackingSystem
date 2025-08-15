@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  /* FitNation Custom Green Colors */
+  --fitnation-primary: #4CAF50;      /* Main green */
+  --fitnation-primary-dark: #388E3C;  /* Darker green */
+  --fitnation-primary-light: #81C784; /* Lighter green */
+  --fitnation-accent: #66BB6A;        /* Accent green */
+  --fitnation-dark: #2E7D32;          /* Dark green */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom FitNation Gradient */
+.fitnation-gradient {
+  background: linear-gradient(135deg, 
+    var(--fitnation-dark) 0%, 
+    var(--fitnation-primary-dark) 25%, 
+    var(--fitnation-primary) 50%, 
+    var(--fitnation-accent) 75%, 
+    var(--fitnation-primary-light) 100%
+  );
+}
+
+/* Custom button styles */
+.fitnation-btn {
+  background-color: var(--fitnation-primary);
+  transition: all 0.3s ease;
+}
+
+.fitnation-btn:hover {
+  background-color: var(--fitnation-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+/* Custom focus styles */
+.fitnation-focus:focus {
+  outline: none;
+  border-color: var(--fitnation-primary);
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
